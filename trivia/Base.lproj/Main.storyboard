@@ -100,7 +100,7 @@ Reinicio: Después de un juego, se puede reiniciar el juego con un nuevo conjunt
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Jugar"/>
                                         <connections>
-                                            <segue destination="u4I-5i-Ua7" kind="presentation" modalPresentationStyle="fullScreen" id="ZYw-ir-Zmw"/>
+                                            <action selector="bntJugar" destination="BYZ-38-t0r" eventType="touchUpInside" id="XxV-Je-IVb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFK-QE-6zH">
@@ -170,43 +170,43 @@ Reinicio: Después de un juego, se puede reiniciar el juego con un nuevo conjunt
             </objects>
             <point key="canvasLocation" x="31.884057971014496" y="6.6964285714285712"/>
         </scene>
-        <!--Juego View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="ffk-sg-cqt">
             <objects>
-                <viewController id="u4I-5i-Ua7" customClass="JuegoViewController" customModule="trivia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="game" id="u4I-5i-Ua7" customClass="GameViewController" customModule="trivia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="svk-AE-SfC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="T6K-3S-4vU">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dwdswdwdw dwedwefdwef erwferwew fwefewfwe fwefewfwef dqwdqwdqwdqw dwqdqwdw qdqwdqwdwq dqw" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYp-1n-alb">
-                                <rect key="frame" x="19.666666666666657" y="25" width="353.66666666666674" height="149.33333333333334"/>
+                                <rect key="frame" x="19.666666666666657" y="84" width="353.66666666666674" height="115"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDT-ad-Pgs">
-                                <rect key="frame" x="19" y="199.33333333333334" width="355" height="453.33333333333326"/>
+                                <rect key="frame" x="19" y="224" width="355" height="404"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhW-Av-BT4">
-                                        <rect key="frame" x="7.6666666666666572" y="24.999999999999993" width="339.66666666666674" height="79.333333333333314"/>
+                                        <rect key="frame" x="7.6666666666666572" y="25" width="339.66666666666674" height="71"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMP-Nv-Axi">
-                                        <rect key="frame" x="7.6666666666666572" y="129.33333333333334" width="339.66666666666674" height="79.666666666666657"/>
+                                        <rect key="frame" x="7.6666666666666572" y="121" width="339.66666666666674" height="71"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKD-K0-KEa">
-                                        <rect key="frame" x="7.6666666666666572" y="234" width="339.66666666666674" height="80"/>
+                                        <rect key="frame" x="7.6666666666666572" y="217" width="339.66666666666674" height="71"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkp-sE-wIh">
-                                        <rect key="frame" x="7.6666666666666572" y="339" width="339.66666666666674" height="79.666666666666686"/>
+                                        <rect key="frame" x="7.6666666666666572" y="313" width="339.66666666666674" height="71"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                     </button>
